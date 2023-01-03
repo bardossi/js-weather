@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bundle.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>JavaScript meteorológus</h2>
+    </div>
+    <div class="search-bar">
+        <div class="form-container">
+            <form action="" id="form">
+                <div id="city" class="form-item">
+                    <input required id="city-input" type="text" placeholder="Város">
+                </div>
+                <div id="date" class="form-item">
+                    <input required id="date-input" type="date">
+                </div>
+                <div class="horizontal-spacer"></div>
+                <div id="search" class="form-item">
+                    <button type="reset">X</button>
+                    <button id="submit" type="submit">Keresés</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="error-message " id="error-message" style="display: none;">
+        Hiba történt az adatbeküldés közben!
+    </div>
+    <div class="content"></div>
+    <div class="weather-container" id="cards-container"></div>
+</body>
+
+</html>
